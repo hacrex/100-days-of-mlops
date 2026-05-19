@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 41 - Feast Feature Store
 
@@ -58,3 +59,8 @@ feast entities list
 
 # --- Tear down the feature store ---
 feast teardown
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 92 — Implementation Notes
 
 ## What I Did
@@ -144,3 +145,8 @@ For ML models: set memory limit generously (models can be large), CPU limit cons
 - The readiness probe is critical — without it, traffic is sent to pods before the model is loaded
 - Rolling updates with `maxUnavailable: 0` ensure zero downtime
 - Resource limits prevent one pod from starving others on the same node
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

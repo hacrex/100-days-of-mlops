@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 3 — Implementation Notes
 
 ## What I Did
@@ -71,3 +72,8 @@ uv pip compile requirements.in \
 - uv's error messages are much clearer than pip's when there are conflicts
 - The `# via` comments in the compiled lockfile are extremely helpful for understanding why a package is included
 - uv is a drop-in replacement for pip in most cases — `uv pip install` works exactly like `pip install`
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

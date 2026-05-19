@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 31 - Scikit-learn Training Pipeline
 
@@ -46,3 +47,8 @@ pipe = Pipeline([('scaler', StandardScaler()), ('clf', LogisticRegression())])
 print(pipe)
 print('Steps:', [name for name, _ in pipe.steps])
 "
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

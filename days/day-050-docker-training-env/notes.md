@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 50 — Implementation Notes
 
 ## What I Did
@@ -91,3 +92,8 @@ WORKDIR /home/appuser/app
 - Multi-stage builds reduced the image from 850MB to 210MB
 - Layer caching is critical for fast CI builds — always copy requirements before source code
 - The `.dockerignore` file is as important as `.gitignore` — without it, the build context is huge
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

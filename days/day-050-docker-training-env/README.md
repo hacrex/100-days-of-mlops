@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 50 - Docker Training Environment
 
 ## Objective
@@ -134,3 +135,33 @@ mlruns/
 ## Next Steps
 
 - Day 51: Multi-stage Docker Builds — advanced build patterns
+=======
+# Day 50 - Docker Training Env
+
+## Objective
+Document hands-on implementation and learnings for this MLOps task.
+
+## Topics Covered
+- TODO
+
+## Tools Used
+- Python
+- Docker
+- Kubernetes
+- MLflow
+
+## Commands
+
+```bash
+# Add commands here
+```
+
+## Learnings
+- TODO
+
+## Screenshots
+Add screenshots here.
+
+## References
+- Official Documentation
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

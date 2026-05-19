@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 20 - MLflow Experiment Tracking
 
@@ -37,3 +38,8 @@ mlflow models serve -m "models:/MyModel/Production" --port 8080
 
 # --- Build a Docker image for a model ---
 mlflow models build-docker -m "runs:/<run_id>/model" -n my-model-image
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

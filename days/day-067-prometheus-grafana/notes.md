@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 67 — Implementation Notes
 
 ## What I Did
@@ -81,3 +82,8 @@ scrape_configs:
 - Grafana's "Explore" tab is great for ad-hoc PromQL queries
 - Setting up alerting rules in Prometheus is straightforward — just YAML
 - The `histogram_quantile` function is the key to SLO monitoring
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

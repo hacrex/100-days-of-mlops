@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 1 — Implementation Notes
 
 ## What I Did
@@ -79,3 +80,8 @@ pip install -r requirements.txt
 - How does `uv` compare to `pip` for speed? (Day 3 will cover this)
 - What's the best way to manage multiple Python versions? → `pyenv`
 - Should I use `requirements.txt` or `pyproject.toml`? → For simple projects, `requirements.txt` is fine; for packages, use `pyproject.toml`
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

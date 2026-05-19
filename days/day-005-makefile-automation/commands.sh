@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 5 - Makefile Automation
 
@@ -24,3 +25,8 @@ make help
 
 # --- Run in a specific directory ---
 make -C days/day-005-makefile-automation install
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

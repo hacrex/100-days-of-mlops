@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 76 — Implementation Notes
 
 ## What I Did
@@ -139,3 +140,8 @@ Deploy to Production
 - The model validation gate is the key MLOps addition over standard CI/CD
 - Storing metrics as JSON artifacts makes it easy to compare across runs
 - Using `github.sha` as the image tag ensures every commit has a unique, traceable image
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

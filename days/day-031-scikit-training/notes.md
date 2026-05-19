@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 31 — Implementation Notes
 
 ## What I Did
@@ -109,3 +110,8 @@ new_passenger = pd.DataFrame({
 prediction = pipeline.predict(new_passenger)
 probability = pipeline.predict_proba(new_passenger)
 ```
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

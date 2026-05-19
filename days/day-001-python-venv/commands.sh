@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 1 - Python Virtual Environments
 # All commands used during this day's practice
@@ -39,3 +40,8 @@ python -c "import numpy; print(numpy.__version__)"
 
 # --- Show where a package is installed ---
 pip show numpy
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

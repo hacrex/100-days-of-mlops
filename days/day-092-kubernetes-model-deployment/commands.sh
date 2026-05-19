@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 92 - Kubernetes Model Deployment
 
@@ -44,3 +45,8 @@ kubectl rollout history deployment/ml-api -n ml-serving
 
 # --- Delete everything ---
 kubectl delete -f src/k8s/
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

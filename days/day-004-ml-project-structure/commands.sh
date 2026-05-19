@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 4 - ML Project Structure
 
@@ -28,3 +29,8 @@ pip show mlproject
 
 # --- List the project structure ---
 find . -type f | grep -v __pycache__ | grep -v .git | grep -v .venv | sort
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

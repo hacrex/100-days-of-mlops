@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 57 — Implementation Notes
 
 ## What I Did
@@ -132,3 +133,8 @@ CMD ["gunicorn", "--workers", "4", "--bind", "0.0.0.0:8080", "src.app:app"]
 | Auto docs | ❌ | ✅ OpenAPI/Swagger |
 | Performance | Good | Better (async) |
 | Learning curve | Low | Low-Medium |
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

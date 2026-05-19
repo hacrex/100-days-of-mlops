@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 black==24.3.0
 isort==5.13.2
 ruff==0.3.4
 pytest==8.1.1
+=======
+# Add dependencies here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

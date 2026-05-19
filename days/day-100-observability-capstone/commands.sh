@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 100 - Observability Capstone
 
@@ -40,3 +41,8 @@ python src/drift_check.py
 
 # --- Stop everything ---
 docker compose down
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

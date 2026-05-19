@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 5 — Implementation Notes
 
 ## What I Did
@@ -98,3 +99,8 @@ train: install
 | Incremental builds | ✅ File timestamps | ❌ Manual |
 | Portability | ✅ Unix universal | ✅ Unix universal |
 | Windows support | ⚠️ Needs make | ✅ Git Bash / WSL |
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

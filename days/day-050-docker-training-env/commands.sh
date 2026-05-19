@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 50 - Docker Training Environment
 
@@ -44,3 +45,8 @@ docker push your-registry/ml-training:latest
 # --- Clean up ---
 docker rmi ml-training:latest
 docker system prune -f
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

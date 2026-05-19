@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 jupyterlab==4.1.5
 ipykernel==6.29.3
 nbconvert==7.16.3
 nbstripout==0.7.1
+=======
+# Add dependencies here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

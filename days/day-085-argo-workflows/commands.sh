@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 85 - Argo Workflows
 
@@ -43,3 +44,8 @@ argo submit -n argo src/ml-pipeline.yaml \
 
 # --- Retry a failed workflow ---
 argo retry -n argo <workflow-name>
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 2 — Implementation Notes
 
 ## What I Did
@@ -61,3 +62,8 @@ This adds a git filter that strips outputs before every commit.
 
 - How to run notebooks in CI? → `jupyter nbconvert --to notebook --execute notebook.ipynb`
 - How to parameterize notebooks? → Papermill (Day 21 territory)
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

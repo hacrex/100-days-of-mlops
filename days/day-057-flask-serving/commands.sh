@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 57 - Flask Model Serving
 
@@ -35,3 +36,8 @@ docker run -p 8080:8080 flask-model-server:latest
 
 # --- Load test with wrk ---
 wrk -t4 -c100 -d30s -s post.lua http://localhost:8080/predict
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 76 - ML CI/CD Pipelines
 
@@ -38,3 +39,8 @@ gh run list --workflow=ml-pipeline.yml
 
 # --- View a specific run's logs ---
 gh run view <run-id> --log
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

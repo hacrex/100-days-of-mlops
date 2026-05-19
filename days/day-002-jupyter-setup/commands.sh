@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 2 - Jupyter Notebook Setup
 
@@ -33,3 +34,8 @@ nbstripout --install
 
 # --- Remove a kernel ---
 jupyter kernelspec uninstall mlops
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

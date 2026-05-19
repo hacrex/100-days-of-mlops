@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 67 - Prometheus + Grafana Monitoring
 
@@ -34,3 +35,8 @@ curl http://localhost:9090/api/v1/rules
 
 # --- Stop everything ---
 docker compose down
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

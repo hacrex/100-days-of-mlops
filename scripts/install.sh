@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # install.sh — Install dependencies for a specific day or all days
 
@@ -54,3 +55,8 @@ elif [ $# -eq 1 ]; then
 else
     usage
 fi
+=======
+#!/bin/bash
+
+echo 'Install dependencies'
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

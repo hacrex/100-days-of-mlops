@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 20 — Implementation Notes
 
 ## What I Did
@@ -90,3 +91,8 @@ model.fit(X_train, y_train)
 - The `mlruns/` directory is created automatically when using the default file-based backend
 - Auto-logging is convenient but logs too much for production — explicit logging is cleaner
 - The MLflow UI's parallel coordinates plot is great for hyperparameter analysis
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

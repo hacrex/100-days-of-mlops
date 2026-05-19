@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 10 - DVC Init & Data Versioning
 
@@ -53,3 +54,8 @@ dvc add data/raw/train.csv
 git add data/raw/train.csv.dvc
 git commit -m "Add row 3 to train.csv"
 dvc push
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

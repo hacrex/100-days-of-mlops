@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 opentelemetry-sdk==1.23.0
 opentelemetry-exporter-jaeger==1.21.0
 opentelemetry-instrumentation-flask==0.44b0
@@ -7,3 +8,6 @@ flask==3.0.2
 evidently==0.4.22
 pandas==2.2.1
 numpy==1.26.4
+=======
+# Add dependencies here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

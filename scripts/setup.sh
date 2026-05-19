@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # setup.sh — Bootstrap the development environment for 100-days-of-mlops
 
@@ -47,3 +48,8 @@ echo ""
 echo "To start working on a specific day:"
 echo "    cd days/day-001-python-venv"
 echo "    pip install -r requirements.txt"
+=======
+#!/bin/bash
+
+echo 'Setup script'
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

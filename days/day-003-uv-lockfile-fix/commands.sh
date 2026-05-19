@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # Day 3 - uv Package Manager & Lockfiles
 
@@ -40,3 +41,8 @@ uv pip list
 
 # --- Show package info ---
 uv pip show numpy
+=======
+#!/bin/bash
+
+# Add commands here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

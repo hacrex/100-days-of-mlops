@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 # cleanup.sh — Remove generated artifacts and temporary files
 
@@ -39,3 +40,8 @@ echo "✅ Cleanup complete."
 echo ""
 echo "Note: Virtual environments (.venv/, venv/) were NOT removed."
 echo "To also remove the venv, run: rm -rf .venv venv"
+=======
+#!/bin/bash
+
+echo 'Cleanup'
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

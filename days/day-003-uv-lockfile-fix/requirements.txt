@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 uv==0.1.45
+=======
+# Add dependencies here
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

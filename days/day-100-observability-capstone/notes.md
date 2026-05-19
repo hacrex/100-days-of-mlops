@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Day 100 — Implementation Notes
 
 ## What I Built
@@ -114,3 +115,8 @@ The most impactful skills:
 3. **Docker** — Reproducibility across environments
 4. **Kubernetes** — The platform everything runs on
 5. **Observability** — You can't improve what you can't measure
+=======
+# Notes
+
+Add your implementation notes here.
+>>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4
