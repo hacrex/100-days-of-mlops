@@ -1,1 +1,2 @@
-# Add dependencies here
+# No Python dependencies for this day — Argo runs containers
+# Install the Argo CLI separately (see commands.sh)

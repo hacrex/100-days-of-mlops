@@ -1,1 +1,1 @@
-# Add dependencies here
+dvc==3.49.0

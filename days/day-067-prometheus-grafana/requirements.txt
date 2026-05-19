@@ -1,1 +1,2 @@
-# Add dependencies here
+prometheus-client==0.20.0
+flask==3.0.2

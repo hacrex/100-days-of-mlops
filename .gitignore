@@ -1,9 +1,84 @@
-
+# Python
 venv/
+.venv/
+env/
 __pycache__/
 *.pyc
-.DS_Store
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment
 .env
+.env.*
+!.env.example
+
+# ML artifacts
 mlruns/
+mlartifacts/
+wandb/
+outputs/
+checkpoints/
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.pt
+*.pth
+*.bin
+
+# Data
 data/
+datasets/
+*.csv
+*.parquet
+*.feather
+*.arrow
+*.db
+*.sqlite
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Docker
+.docker/
+
+# Logs
 *.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Terraform / infra
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Secrets
+*.pem
+*.key
+*.crt
+secrets/

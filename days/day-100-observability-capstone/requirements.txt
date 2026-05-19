@@ -1,1 +1,9 @@
-# Add dependencies here
+opentelemetry-sdk==1.23.0
+opentelemetry-exporter-jaeger==1.21.0
+opentelemetry-instrumentation-flask==0.44b0
+opentelemetry-instrumentation-requests==0.44b0
+prometheus-client==0.20.0
+flask==3.0.2
+evidently==0.4.22
+pandas==2.2.1
+numpy==1.26.4

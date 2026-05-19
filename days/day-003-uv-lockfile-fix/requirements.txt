@@ -1,1 +1,1 @@
-# Add dependencies here
+uv==0.1.45
