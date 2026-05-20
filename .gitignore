@@ -1,84 +1,128 @@
-# Python
+```
+# Dependencies
 venv/
 .venv/
-env/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.egg-info/
-dist/
-build/
-.eggs/
-*.egg
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
+.Python
+env/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
 .coverage
-htmlcov/
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Environment
-.env
-.env.*
-!.env.example
-
-# ML artifacts
-mlruns/
-mlartifacts/
-wandb/
-outputs/
-checkpoints/
-*.pkl
-*.joblib
-*.h5
-*.onnx
-*.pt
-*.pth
-*.bin
-
-# Data
-data/
-datasets/
-*.csv
-*.parquet
-*.feather
-*.arrow
-*.db
-*.sqlite
-
-# DVC
-.dvc/cache/
-.dvc/tmp/
-
-# Docker
-.docker/
-
-# Logs
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
 *.log
-logs/
-
-# OS
 .DS_Store
 Thumbs.db
-desktop.ini
 
-# IDE
+# Build and distribution artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE and editor files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# Terraform / infra
-*.tfstate
-*.tfstate.backup
-.terraform/
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+.venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.DS_Store
+Thumbs.db
 
-# Secrets
-*.pem
-*.key
-*.crt
-secrets/
+# Environment variables
+.env
+.env.local
+.env.*
+
+# ML specific
+.mlruns/
+mlruns/
+model/
+models/
+checkpoints/
+*.ckpt
+*.pth
+*.h5
+*.joblib
+*.pkl
+*.pickle
+
+# Docker
+Dockerfile*
+.dockerignore
+
+# Kubernetes
+k8s/
+*.yaml
+*.yml
+
+# Coverage
+.coverage*
+htmlcov/
+.coverage
+.coverage.*
+.nox/
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+```

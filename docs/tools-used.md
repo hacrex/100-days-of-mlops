@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tools & Technologies Reference
 
 A quick reference for every tool used across the 100 days.
@@ -133,8 +132,3 @@ A quick reference for every tool used across the 100 days.
 | [Locust](https://locust.io) | Load testing | `pip install locust` |
 | [SHAP](https://shap.readthedocs.io) | Model explainability | `pip install shap` |
 | [Fairlearn](https://fairlearn.org) | Fairness assessment | `pip install fairlearn` |
-=======
-# Tools Used
-
-Document all tools and technologies here.
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

@@ -1,62 +1,43 @@
-<<<<<<< HEAD
 #!/bin/bash
-# install.sh — Install dependencies for a specific day or all days
+# Install all dependencies for 100 Days of MLOps
 
-set -euo pipefail
+set -e
 
-usage() {
-    echo "Usage: $0 [day-folder]"
-    echo ""
-    echo "Examples:"
-    echo "  $0                          # Install deps for all days"
-    echo "  $0 day-001-python-venv      # Install deps for a specific day"
-    exit 1
-}
+echo "📦 Installing all dependencies..."
 
-install_day() {
-    local day_dir="$1"
-    local req_file="$day_dir/requirements.txt"
+# Activate virtual environment if it exists
+if [ -d ".venv" ]; then
+    source .venv/bin/activate
+fi
 
-    if [ -f "$req_file" ]; then
-        # Skip if requirements.txt only contains a comment
-        if grep -qv '^#' "$req_file" 2>/dev/null; then
-            echo "==> Installing dependencies for $day_dir..."
-            pip install -r "$req_file" --quiet
-        else
-            echo "    Skipping $day_dir (no real dependencies listed)"
+# Install global tools
+echo "Installing global tools..."
+uv pip install \
+    jupyterlab \
+    jupyter \
+    ipykernel \
+    black \
+    isort \
+    mypy \
+    pre-commit \
+    pytest \
+    pylint
+
+echo "✅ Global tools installed"
+
+# Install day-specific dependencies
+echo "Installing day-specific dependencies..."
+
+days_dir="days"
+for day_folder in "$days_dir"/day-*/; do
+    if [ -d "$day_folder" ]; then
+        req_file="$day_folder/requirements.txt"
+        if [ -f "$req_file" ]; then
+            echo "  Installing dependencies for $(basename $day_folder)..."
+            uv pip install -r "$req_file"
         fi
     fi
-}
+done
 
-# Activate venv if it exists
-if [ -f ".venv/bin/activate" ]; then
-    # shellcheck disable=SC1091
-    source .venv/bin/activate
-elif [ -f "venv/bin/activate" ]; then
-    # shellcheck disable=SC1091
-    source venv/bin/activate
-fi
-
-if [ $# -eq 0 ]; then
-    echo "==> Installing dependencies for all days..."
-    for day_dir in days/day-*/; do
-        install_day "$day_dir"
-    done
-    echo "✅ All dependencies installed."
-elif [ $# -eq 1 ]; then
-    target="days/$1"
-    if [ -d "$target" ]; then
-        install_day "$target"
-        echo "✅ Done."
-    else
-        echo "Error: Directory '$target' not found."
-        usage
-    fi
-else
-    usage
-fi
-=======
-#!/bin/bash
-
-echo 'Install dependencies'
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4
+echo ""
+echo "✅ All dependencies installed!"

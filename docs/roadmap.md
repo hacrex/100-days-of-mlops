@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 100 Days of MLOps — Learning Roadmap
 
 A structured 100-day plan to go from Python environment basics to production-grade ML systems on Kubernetes.
@@ -203,8 +202,3 @@ After completing the 100 days, four capstone projects tie everything together:
 2. **Argo Workflows Pipeline** — Kubernetes-native ML pipeline with DAG orchestration
 3. **Monitoring & Retraining** — Drift detection triggering automated retraining
 4. **Observability Stack** — Full Prometheus + Grafana + Jaeger + ELK for an ML system
-=======
-# MLOps Roadmap
-
-Track your learning roadmap here.
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

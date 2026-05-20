@@ -1,47 +1,43 @@
-<<<<<<< HEAD
 #!/bin/bash
-# cleanup.sh — Remove generated artifacts and temporary files
+# Cleanup generated artifacts
 
-set -euo pipefail
+set -e
 
-echo "==> Cleaning Python cache files..."
+echo "🧹 Cleaning up generated artifacts..."
+
+# Remove Python cache
 find . -type d -name "__pycache__" -exec rm -rf {} + 2>/dev/null || true
 find . -type f -name "*.pyc" -delete 2>/dev/null || true
 find . -type f -name "*.pyo" -delete 2>/dev/null || true
-find . -type d -name "*.egg-info" -exec rm -rf {} + 2>/dev/null || true
-echo "    Done."
 
-echo "==> Cleaning Jupyter checkpoints..."
+# Remove virtual environments
+rm -rf .venv 2>/dev/null || true
+find . -type d -name ".venv" -exec rm -rf {} + 2>/dev/null || true
+
+# Remove Jupyter checkpoints
 find . -type d -name ".ipynb_checkpoints" -exec rm -rf {} + 2>/dev/null || true
-echo "    Done."
 
-echo "==> Cleaning MLflow artifacts..."
-if [ -d "mlruns" ]; then
-    rm -rf mlruns/
-    echo "    Removed mlruns/"
-fi
-if [ -d "mlartifacts" ]; then
-    rm -rf mlartifacts/
-    echo "    Removed mlartifacts/"
-fi
+# Remove MLflow runs (optional, comment out to keep)
+# rm -rf mlruns 2>/dev/null || true
+# find . -type d -name "mlruns" -exec rm -rf {} + 2>/dev/null || true
 
-echo "==> Cleaning log files..."
-find . -type f -name "*.log" -delete 2>/dev/null || true
-echo "    Done."
+# Remove DVC cache (optional, comment out to keep)
+# rm -rf .dvc/cache 2>/dev/null || true
 
-echo "==> Cleaning pytest / coverage artifacts..."
+# Remove build artifacts
+rm -rf build/ dist/ *.egg-info 2>/dev/null || true
+find . -type d -name "build" -exec rm -rf {} + 2>/dev/null || true
+find . -type d -name "dist" -exec rm -rf {} + 2>/dev/null || true
+
+# Remove pytest cache
+rm -rf .pytest_cache 2>/dev/null || true
 find . -type d -name ".pytest_cache" -exec rm -rf {} + 2>/dev/null || true
-find . -type d -name "htmlcov" -exec rm -rf {} + 2>/dev/null || true
-find . -type f -name ".coverage" -delete 2>/dev/null || true
-echo "    Done."
 
-echo ""
-echo "✅ Cleanup complete."
-echo ""
-echo "Note: Virtual environments (.venv/, venv/) were NOT removed."
-echo "To also remove the venv, run: rm -rf .venv venv"
-=======
-#!/bin/bash
+# Remove mypy cache
+rm -rf .mypy_cache 2>/dev/null || true
+find . -type d -name ".mypy_cache" -exec rm -rf {} + 2>/dev/null || true
 
-echo 'Cleanup'
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4
+# Remove black cache
+rm -rf .black_cache 2>/dev/null || true
+
+echo "✅ Cleanup complete!"

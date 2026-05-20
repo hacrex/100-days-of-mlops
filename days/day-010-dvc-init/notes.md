@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Day 10 — Implementation Notes
 
 ## What I Did
@@ -69,8 +68,3 @@ git push
 - The `.dvc` file is tiny (~100 bytes) — git handles it perfectly
 - DVC's cache deduplicates files by content — if you add the same file twice, it's only stored once
 - `dvc status` is like `git status` for data — it shows what's changed vs the last commit
-=======
-# Notes
-
-Add your implementation notes here.
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4
