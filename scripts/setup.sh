@@ -1,55 +1,50 @@
-<<<<<<< HEAD
 #!/bin/bash
-# setup.sh — Bootstrap the development environment for 100-days-of-mlops
+# Bootstrap development environment for 100 Days of MLOps
 
-set -euo pipefail
+set -e
 
-PYTHON_MIN_VERSION="3.10"
+echo "🚀 Setting up 100 Days of MLOps environment..."
 
-echo "==> Checking Python version..."
-python_version=$(python3 --version 2>&1 | awk '{print $2}')
-echo "    Found Python $python_version"
+# Check for Python
+if ! command -v python3 &> /dev/null; then
+    echo "❌ Python 3 is required but not installed."
+    exit 1
+fi
 
-echo "==> Creating virtual environment..."
-python3 -m venv .venv
-echo "    Virtual environment created at .venv/"
+echo "✅ Python version: $(python3 --version)"
 
-echo "==> Activating virtual environment..."
-# shellcheck disable=SC1091
+# Install uv if not present
+if ! command -v uv &> /dev/null; then
+    echo "📦 Installing uv package manager..."
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
+echo "✅ uv version: $(uv --version)"
+
+# Create virtual environment if it doesn't exist
+if [ ! -d ".venv" ]; then
+    echo "🐍 Creating virtual environment..."
+    uv venv
+fi
+
+# Activate virtual environment
 source .venv/bin/activate
 
-echo "==> Upgrading pip..."
-pip install --upgrade pip --quiet
+# Install base dependencies
+echo "📥 Installing base dependencies..."
+uv pip install -r requirements.txt 2>/dev/null || echo "No global requirements.txt found"
 
-echo "==> Installing base tools..."
-pip install --quiet \
-    black \
-    isort \
-    ruff \
-    mypy \
-    pre-commit \
-    ipykernel \
-    jupyterlab
-
-echo "==> Setting up pre-commit hooks (if .pre-commit-config.yaml exists)..."
-if [ -f ".pre-commit-config.yaml" ]; then
+# Install pre-commit hooks
+if command -v pre-commit &> /dev/null && [ -f ".pre-commit-config.yaml" ]; then
+    echo "🔧 Installing pre-commit hooks..."
     pre-commit install
-    echo "    Pre-commit hooks installed."
-else
-    echo "    No .pre-commit-config.yaml found, skipping."
 fi
 
 echo ""
 echo "✅ Setup complete!"
 echo ""
-echo "To activate the environment, run:"
-echo "    source .venv/bin/activate"
-echo ""
-echo "To start working on a specific day:"
-echo "    cd days/day-001-python-venv"
-echo "    pip install -r requirements.txt"
-=======
-#!/bin/bash
-
-echo 'Setup script'
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4
+echo "Next steps:"
+echo "  1. Activate environment: source .venv/bin/activate"
+echo "  2. Navigate to a day folder: cd days/day-001-python-venv"
+echo "  3. Read the README and start learning!"

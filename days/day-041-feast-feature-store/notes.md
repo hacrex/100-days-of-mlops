@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Day 41 — Implementation Notes
 
 ## What I Did
@@ -99,8 +98,3 @@ driver_id | event_timestamp | conv_rate
 - The local provider (SQLite + Parquet) is great for development but not production
 - For production, use Redis for the online store and BigQuery/Redshift for the offline store
 - Feast's Python SDK is clean and well-documented
-=======
-# Notes
-
-Add your implementation notes here.
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

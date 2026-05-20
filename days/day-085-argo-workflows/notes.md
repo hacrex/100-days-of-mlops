@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Day 85 — Implementation Notes
 
 ## What I Did
@@ -90,8 +89,3 @@ templates:
 - The YAML syntax is verbose but very explicit — no magic
 - Artifacts require an S3-compatible store (MinIO works locally)
 - For local development, using a shared PVC is simpler than S3 for artifacts
-=======
-# Notes
-
-Add your implementation notes here.
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4

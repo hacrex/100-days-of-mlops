@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Day 4 — Implementation Notes
 
 ## What I Did
@@ -101,8 +100,3 @@ from pathlib import Path
 
 config = yaml.safe_load(Path("configs/train_config.yaml").read_text())
 ```
-=======
-# Notes
-
-Add your implementation notes here.
->>>>>>> 74eb85e2773b642d35fdd2d5a363469d366b02f4
